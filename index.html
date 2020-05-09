@@ -18,38 +18,46 @@
     <h1>Weather Dashboard</h1>
   </div>
 
-  <div class="card" style="width: 18rem; margin-left: 5px;">
-    <div class="card-top">
-      <h5>Search for a City:</h5>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id="textInput" type="search" placeholder="Zipcode here" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" id="submitbtn" type="submit">
-          <Search aria-hidden="true"></Search>Search
-        </button>
-      </form> -->
+  <div class="row">
+    <div class="card rounded-0" style="width: 25rem; background-color:aliceblue;">
       <div class="card-body">
-        <div class="container">
-          <form class="row">
-            <div class="input-group flex-nowrap">
-              <input type="text" id="listSearch" class="form-control textInput" placeholder="Type city to search">
-              <div class="input-group-prepend">
-                <button class="btn btn-outline-primary my-2 my-sm-0" id="submitbtn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-          <br>
-          <ul class="list-group" id="myList">
-            <li class="list-group-item">Austin</li>
-            <li class="list-group-item">Chicago</li>
-            <li class="list-group-item">New York</li>
-            <li class="list-group-item">Orlando</li>
-            <li class="list-group-item">San Francisco</li>
-            <li class="list-group-item">Seattle</li>
-            <li class="list-group-item">Denver</li>
-            <li class="list-group-item">Atlanta</li>
-          </ul>
+        <h5>Search for a City:</h5>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="input-group flex-nowrap">
+            <input type="text" id="listSearch" class="form-control textInput" placeholder="Type city to search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" id="submitbtn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="input-group-prepend"></div>
+
+          </div>
+        </form>
+        <br>
+        <ul class="list-group" id="myList">
+          <li class="list-group-item">Austin</li>
+          <li class="list-group-item">Chicago</li>
+          <li class="list-group-item">New York</li>
+          <li class="list-group-item">Orlando</li>
+          <li class="list-group-item">San Francisco</li>
+          <li class="list-group-item">Seattle</li>
+          <li class="list-group-item">Denver</li>
+          <li class="list-group-item">Atlanta</li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" id="textInput" type="search" placeholder="Zipcode here" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="submitbtn" type="submit">
+            <Search aria-hidden="true"></Search>Search
+          </button>
+        </form> -->
+
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
