@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     console.log(city);
     $("#city").val("");
-    var key = moment().format("MM/DD/YY hh:mm ss a");
+    var key = moment().format("MM/DD/YY");
     localStorage.setItem(key, city);
 
     $.ajax({
@@ -31,7 +31,7 @@ $(document).ready(function () {
       var tempC2 = tempC.toFixed(2);
       var tempF2 = tempF.toFixed(2);
 
-      $(".body2").append(`<h3><strong>${cityName}</strong></h3> <br/>`)
+      $(".body2").append(`<h3><strong>${cityName}(${key})</strong></h3> <br/>`)
       // $(".body2").append(`<div>Temperature in celcius: ${tempC2} °C</div>`)
       $(".body2").append(`<div><h5 class="text-muted">Temperature: ${tempF2} °F</h5></div> <br/>`)
       $(".body2").append(`<div><h5 class="text-muted">Humidity: ${response.main.humidity}% </h5></div><br/>`)
